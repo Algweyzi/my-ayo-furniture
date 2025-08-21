@@ -1,0 +1,20 @@
+# This file provides explicit configuration for Netlify's build system.
+
+[build]
+  # Command to build the project
+  command = "yarn build"
+  
+  # The directory where the built site is located
+  publish = "dist"
+
+[build.environment]
+  # Specifies the Node.js version to use for the build.
+  # This is critical for compatibility with modern tooling like ESLint 9.
+  NODE_VERSION = "20"
+
+# Redirect rule for Single Page Applications (SPAs) like React.
+# This ensures that client-side routing works correctly.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

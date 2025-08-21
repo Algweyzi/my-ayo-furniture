@@ -1,0 +1,1 @@
+This file is a placeholder to ensure the 'public' directory is created. Please add your logo.png file in this directory.
